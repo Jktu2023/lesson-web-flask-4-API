@@ -8,17 +8,17 @@
 
 <div class="container">
     <h1>Цитаты ninjas</h1>
-    <p>{{ quote_ninjas }}</p>
+    <p>{{ quote_ninjas if quote_ninjas else 'НЕ удалось получить цитату'}}</p>
 </div>
 
-<div class="container">
+<div class="container2">
     <h1>Цитаты zenquotes</h1>
-    <p>{{ quote_zenquotes }}</p>
+    <p>{{ quote_zenquotes if quote_zenquotes else 'НЕ удалось получить цитату'}}</p>
 </div>
 
-<div class="container">
+<div class="container3">
     <h1>Цитаты quoteslate</h1>
-    <p>{{ quote_quoteslate }}</p>
+    <p>{{ quote_quoteslate if quote_quoteslate else 'НЕ удалось получить цитату'}}</p>
 </div>
 
 

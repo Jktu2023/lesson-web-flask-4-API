@@ -53,7 +53,7 @@ def index():
             return  render_template("index.html", quote_quoteslate='Испольщите GET для получения цитаты')
     except requests.exceptions.RequestException as e:
         quotes['quote_quoteslate'] = f'Ошибка: {str(e)}'
-    return  render_template("index.html", **quotes) # quote_ninjas=quote, quote_zenquotes=data,
+    return  render_template("index.html", **quote) # quote_ninjas=quote, quote_zenquotes=data,
 
 if __name__ == '__main__':
     app.run(debug=True)
